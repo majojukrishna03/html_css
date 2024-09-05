@@ -1,3 +1,4 @@
+/* Original CSS */
 header {
     text-align: center;
 }
@@ -17,88 +18,31 @@ h1 {
 p { 
     font-size: small;
 }
-nav {
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    padding-block: 1px;
-}
-    
-nav li {
-    color: white;
-    display: inline;
-    padding-inline: 20px;
-}
-nav ul {
-    list-style: none ;
-}
 
 section {
     background-color: rgb(234, 234, 234);
 }
 
-.card-program {
+.card-program, .card-curriculum, .card-Admission, .card-Contact {
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
+    padding: 20px;
     margin: 20px;
 }
 
 h3 {
     color: blue;
-    
 }
 
 .card-program img {
     display: block;
     border-radius: 10px;
-    margin: 20px auto; /* Center the image horizontally */
-    width: 50%; /* Adjust the width to reduce the size of the image */
-    max-width: 300px; /* Optional: Set a maximum width for better control */
-    height: auto; 
-}
-
-.card-curriculum {
-    text-align: left;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
-    margin: 20px;
-    font-size: small;
-}
-
-.card-curriculum h4 {
-    color: blue;
-}
-
-.card-Admission {
-    text-align: left;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
-    margin: 20px;
-    font-size: small;
-}
-
-.card-Admission h4 {
-    color: blue;
-}
-
-.card-Contact {
-    text-align: left;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
-    margin: 20px;
-    font-size: small;
-}
-
-.card-Contact h4 {
-    color: blue;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
 }
 
 footer {
@@ -106,4 +50,37 @@ footer {
     color: aliceblue;
     text-align: center;
     padding-block: 1px;
+}
+
+/* Updated CSS for Nav Bar */
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0; /* Adjusts the height of the nav bar */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px; /* Spacing around the text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Ensures the anchor fills the entire li */
+    height: 100%; /* Makes the anchor fill the li height */
+}
+
+nav li:hover {
+    background-color: rgb(50, 50, 50); /* Hover effect changes background */
+    color: yellow; /* Change text color on hover */
 }
