@@ -1,3 +1,4 @@
+/* Header */
 header {
     text-align: center;
 }
@@ -6,101 +7,137 @@ img {
     box-sizing: border-box;
 }
 
+/* Body font settings */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Main Heading */
 h1 {
     color: blue;
 }
 
+/* Paragraph */
 p { 
     font-size: small;
 }
+
+/* Navigation Bar */
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     text-align: center;
     padding-block: 1px;
 }
     
 nav li {
-    color: white;
-    display: inline;
+    /* color: white; */
+    display: inline-block; /* Ensure items are horizontally aligned */
     padding-inline: 20px;
-}
-nav ul {
-    list-style: none ;
+    padding-block: 10px;
 }
 
+nav a {
+    color: white;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hover effect for nav items */
+nav li:hover {
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px; /* Slight border-radius for hover */
+}
+
+/* Section Background */
 section {
     background-color: rgb(234, 234, 234);
 }
 
+/* Program Card */
 .card-program {
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
+    padding: 20px;
     margin: 20px;
-}
-
-h3 {
-    color: blue;
-    
 }
 
 .card-program img {
     display: block;
     border-radius: 10px;
-    margin: 20px auto; /* Center the image horizontally */
-    width: 50%; /* Adjust the width to reduce the size of the image */
-    max-width: 300px; /* Optional: Set a maximum width for better control */
+    margin: 20px auto;
+    width: 50%;
+    max-width: 300px;
     height: auto; 
 }
 
+/* Curriculum Section */
 .card-curriculum {
-    text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
+    padding: 20px;
     margin: 20px;
+    font-size: small;
+    overflow: hidden; /* To handle overflow if content exceeds */
+}
+
+
+/* Individual course card */
+.course {
+    display: inline-block;
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 20px;
+    width: 200px;
+    text-align: center; /* Center align text */
+    flex: 0 0 auto; /* Prevent shrinking/growing, maintain original size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course h4 {
+    color: blue;
+    margin: 0;
+    font-size: medium;
+}
+
+.course p {
+    margin: 5px 0 0 0;
     font-size: small;
 }
 
-.card-curriculum h4 {
-    color: blue;
-}
 
+/* Admission Section */
 .card-Admission {
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
+    padding: 20px;
     margin: 20px;
     font-size: small;
 }
 
-.card-Admission h4 {
-    color: blue;
-}
-
+/* Contact Section */
 .card-Contact {
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding : 20px;
+    padding: 20px;
     margin: 20px;
     font-size: small;
 }
 
-.card-Contact h4 {
-    color: blue;
-}
-
+/* Footer */
 footer {
     background-color: black;
     color: aliceblue;
