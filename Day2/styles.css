@@ -95,6 +95,21 @@ section {
     margin: 20px;
 }
 
+.card-video {
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-video iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
