@@ -91,18 +91,56 @@ section {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
 }
 
-.card-program img {
-    display: block;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 50%;
-    max-width: 300px;
-    height: auto; 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
 }
+
+.hex {
+    width: 150px;
+    height: 150px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    background: #f0f0f0;
+    margin: 0 10px;
+    position: relative;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    transition: background-color 0.3s ease;
+}
+
+.hex:hover {
+    background-color: #ffe500;
+    color: #000;
+}
+
+.hex span {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    color: #000;
+}
+
+.hex:nth-child(odd) {
+    transform: translateY(40px);
+}
+
+.hex:nth-child(even) {
+    transform: translateY(-40px);
+}
+
+
 
 /* Curriculum Section */
 .card-curriculum {
