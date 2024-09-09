@@ -230,3 +230,7 @@ footer img {
     height: 40px;
     padding: 5px;
 }
+
+footer img:hover {
+    transform: scale(1.5);
+}
