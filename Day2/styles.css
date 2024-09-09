@@ -85,6 +85,21 @@ section {
     background-color: rgb(234, 234, 234);
 }
 
+/* Video Card*/
+.card-video {
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-video iframe {
+    display: block;
+    margin: 0 auto;
+}
+
 /* Program Card */
 .card-program {
     text-align: left;
@@ -207,4 +222,11 @@ footer {
     color: aliceblue;
     text-align: center;
     padding-block: 1px;
+}
+
+/*Social media links*/
+footer img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
 }
