@@ -11,6 +11,7 @@ button {
     background-color: rgb(0, 47, 255);
     color: white;
     padding: 5px;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -81,7 +82,7 @@ nav li:hover {
 
 /* Section Background */
 section {
-    padding-top: 5px;
+    padding: 5px;
     background-color: rgb(234, 234, 234);
 }
 
@@ -233,4 +234,61 @@ footer img {
 
 footer img:hover {
     transform: scale(1.5);
+}
+
+
+/*Form styling*/
+.card-Apply {
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+.card-Apply h2 {
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #d6d1d1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight:bolder;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #2a612d;
 }
