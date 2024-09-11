@@ -2,7 +2,6 @@
 header {
     color: white;
     background-color: white;
-    /* border-radius: ; */
     text-align: center;
     
 }
@@ -20,9 +19,9 @@ button:hover {
 
 .header-card {
     /* background-image: url('Computer_science_education.png'); */
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(6, 2, 2, 0.838)),url('Computer_science_education.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(6, 2, 2, 0.838)),url('Msit-logo.jpg');
     border-radius: 10px;
     /* box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.1); */
     padding: 20px;
@@ -82,7 +81,7 @@ nav li:hover {
 
 /* Section Background */
 section {
-    padding: 5px;
+    /* padding: 5px; */
     background-color: rgb(234, 234, 234);
 }
 
@@ -245,19 +244,24 @@ footer img:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15),rgba(6, 2, 2, 0.38)),url('applicationform.jpg');
+    background-size: cover;
 }
 
 .card-Apply h2 {
     text-align: center;
+    color: #ffffff;
+    font-size: xx-large;
 }
 
 form {
-    width: 500px;
+    width: 350px;
     margin: auto;
     padding: 20px;
     background-color: #d6d1d1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 label {
@@ -291,4 +295,84 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #2a612d;
+}
+
+
+/*Slide show styling*/
+
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideAnimation 12s infinite;
+}
+
+.slide:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(6, 2, 2, 0.838)),url('programming_1.jpg');
+    animation-delay: 0s;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slide:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(6, 2, 2, 0.838)),url('computer_programming_2.jpg');
+    animation-delay: 5s;
+}
+
+.slide:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.815),rgba(6, 2, 2, 0.838)),url('computer_programming_3.jpg');
+    animation-delay: 10s;
+}
+
+@keyframes slideAnimation {
+    0%, 100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    10%, 30% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    40%, 90% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.slideshow-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.slideshow-container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
